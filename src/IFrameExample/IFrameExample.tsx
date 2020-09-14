@@ -20,12 +20,14 @@ export default function IFrameExample() {
         <option value="Men">Men</option>
         <option value="Women">Women</option>
       </select>
-      <iframe
-        title="storms"
-        src={`https://public.tableau.com/views/RegionalSampleWorkbook/College?:showVizHome=no&:embed=yes&:tabs=no&:toolbar=no${yearFilter}${genderFilter}`}
-        width="900"
-        height="700"
-      />
+      <div>
+        <iframe
+          title="college"
+          src={`https://public.tableau.com/views/RegionalSampleWorkbook/College?:showVizHome=no&:embed=yes&:tabs=no&:toolbar=no${yearFilter}${genderFilter}`}
+          width="800px"
+          height="650px"
+        />
+      </div>
     </div>
   );
 }
